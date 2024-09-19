@@ -4,9 +4,7 @@ function calculateDifference(num1, num2){
     let difference = num1-num2;
     return difference;
 }
-const result_diff = calculateDifference(30,20);
-console.log(result_diff);
-
+console.log(calculateDifference(30,20));
 
 // Question 2: Function named with isOdd
 function isOdd(num){
@@ -16,11 +14,8 @@ function isOdd(num){
         return false;
     }
 }
-const result_check_type1 = isOdd(3);
-const result_check_type2 = isOdd(4);
-console.log(result_check_type1);
-console.log(result_check_type2);
-
+console.log(isOdd(3));
+console.log(isOdd(4));
 
 // Question 3: Function named with findMin
 function findMin(array){
@@ -32,8 +27,7 @@ function findMin(array){
     }
     return smallest_num;
 }
-const result_small_num = findMin([2,3,6,7,10,9,5]);
-console.log(result_small_num);
+console.log(findMin([2,3,6,7,10,9,5]));
 
 // Question 4: Function with filtered even numbers in Array.
 function filterEvenNumbers(array){
@@ -45,25 +39,21 @@ function filterEvenNumbers(array){
     }
     return newArray;
 }
-const result_even_num = filterEvenNumbers([1,2,3,4,5,6,7,10]);
-console.log(result_even_num);
+console.log(filterEvenNumbers([1,2,3,4,5,6,7,10]));
 
 // Question 5: Function with sortArrayDescending numbers in Array.
 function sortArrayDescending(array){
     let final_array = array.sort((a,b)=>b-a);
     return final_array;
 }
-const result_des = sortArrayDescending([5,8, 3, 1, 9, 11,7]);
-console.log(result_des);
-
+console.log(sortArrayDescending([5,8, 3, 1, 9, 11,7]));
 
 // Question 6: Function with lowercaseFirstLetter
 function lowercaseFirstLetter(str){
     let new_str =str[0].toLowerCase() + str.slice(1);
     return new_str;
 }
-const result_new_str = lowercaseFirstLetter("Hello");
-console.log(result_new_str);
+console.log(lowercaseFirstLetter("Hello"));
 
 // Question 7: Function named countVowels
 function countVowels(str){
@@ -74,8 +64,8 @@ function countVowels(str){
     count = [...str].filter(char=>vowels.includes(char)).length;
     return count;
 }
-const count_example = countVowels("Bangladesh");
-console.log(count_example);
+console.log(countVowels("Bangladesh"));
+
 
 // Question 8: Function with findAverage numbers in Array.
 function findAverage(array){
@@ -86,5 +76,5 @@ function findAverage(array){
     let ave = sum/array.length
     return ave;
 }
-const result_avg = findAverage([4,2,3,6,8]);
-console.log(result_avg);
+console.log(findAverage([4,2,3,6,8]));
+
